@@ -1,0 +1,29 @@
+{
+  "updatedAt": "2026-09-16",
+  "items": [
+    {
+      "cat": "cdi",
+      "new": true,
+      "open": true,
+      "title": "Exemple — Enseignant d’anglais (CDI)",
+      "org": "Donnée de démonstration — à remplacer par une offre réelle",
+      "place": "France",
+      "date": "2026-09-16",
+      "deadline": "À vérifier",
+      "req": "CDI · profil compatible à vérifier",
+      "url": "https://www.google.com/search?q=offre+CDI+enseignant+anglais+France"
+    },
+    {
+      "cat": "info",
+      "new": true,
+      "open": true,
+      "title": "Exemple — L3 Informatique",
+      "org": "Donnée de démonstration — à remplacer par une formation réelle",
+      "place": "France / Distance",
+      "date": "2026-09-15",
+      "deadline": "À vérifier",
+      "req": "Admission en L3 à vérifier",
+      "url": "https://www.google.com/search?q=L3+informatique+admission+France"
+    }
+  ]
+}
