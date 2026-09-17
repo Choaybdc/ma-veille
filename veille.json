@@ -1,4 +1,31 @@
 {
-  "updatedAt": "2026-09-17",
-  "items": []
+  "updatedAt": "2026-09-16T17:00:00+02:00",
+  "items": [
+    {
+      "id": "demo-cdi-001",
+      "category": "cdi",
+      "title": "Exemple — Enseignant d’anglais (CDI)",
+      "organization": "Exemple",
+      "location": "France",
+      "publishedAt": "2026-09-16",
+      "deadline": "",
+      "conditions": "Exemple — à remplacer par une offre réelle.",
+      "url": "https://www.google.com/search?q=offre+CDI+enseignant+anglais+France",
+      "isNew": true,
+      "isOpen": true
+    },
+    {
+      "id": "demo-l3-001",
+      "category": "l3",
+      "title": "Exemple — L3 Informatique",
+      "organization": "Exemple",
+      "location": "France / à distance",
+      "publishedAt": "2026-09-15",
+      "deadline": "",
+      "conditions": "Exemple — à remplacer par une formation réelle.",
+      "url": "https://www.google.com/search?q=L3+informatique+admission+France",
+      "isNew": true,
+      "isOpen": true
+    }
+  ]
 }

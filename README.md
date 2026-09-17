@@ -1,23 +1,22 @@
-# Ma Veille V5 — Client + Admin sécurisé
+# Ma Veille V6 — synchronisation Supabase complète
 
-## Ce qui est nouveau
-- `index.html` : surface publique/client.
-- `admin.html` : back-office administrateur séparé.
-- `supabase-config.js` : connexion optionnelle à Supabase.
-- `supabase_schema.sql` : base de données + authentification + RLS.
-- `SETUP_SUPABASE.md` : procédure de mise en ligne.
+Ma Veille V6 sépare :
+- `index.html` : surface client/public ;
+- `admin.html` : back-office administrateur ;
+- Supabase : authentification, PostgreSQL, RLS et Realtime.
 
-## Mode production
-Avec Supabase configuré :
-- les opportunités et l'apparence sont stockées dans la base ;
-- l'admin se connecte par email/mot de passe ;
-- les règles RLS empêchent un utilisateur non admin de modifier les données ;
-- le client lit les données en temps réel lors de l'actualisation.
+## Synchronisation
+Les opportunités et réglages ne dépendent plus du `localStorage` en production. Le dashboard écrit dans Supabase et le client lit Supabase. Les changements sont propagés par Realtime aux pages ouvertes.
 
-Sans Supabase, le projet garde un mode statique de secours avec `veille.json` et `localStorage`.
+## Sécurité
+Le navigateur utilise uniquement la clé publique Supabase. Les écritures sont protégées par RLS et par le rôle `admin` dans `profiles`.
 
-## Important
-GitHub Pages reste l'hébergement du front-end. Les secrets serveur ne doivent jamais être placés dans le navigateur. Utilisez uniquement la clé publique Supabase (anon/publishable) côté client et laissez les RLS protéger les données.
+## À faire une seule fois
+1. Configurer `supabase-config.js`.
+2. Exécuter `supabase_schema.sql`.
+3. Créer le compte Supabase.
+4. Lui attribuer le rôle `admin`.
+5. Déployer les fichiers sur GitHub Pages.
 
-## Monétisation
-Cette V5 prépare l'architecture pour ajouter ensuite comptes utilisateurs, Premium et paiements Stripe. Stripe n'est pas activé dans cette archive.
+## Limites actuelles
+Cette version n'inclut pas encore les comptes clients, favoris multi-appareils, notifications push, abonnement Premium ou Stripe. Ces fonctionnalités peuvent être ajoutées ensuite.

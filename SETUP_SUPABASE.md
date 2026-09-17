@@ -1,28 +1,39 @@
-# Ma Veille V5 — activation de l'administration sécurisée
+# Ma Veille V6 — connexion Supabase
 
-Cette version conserve un mode statique de secours, mais peut fonctionner avec Supabase pour une vraie séparation client/admin.
+## 1. Configuration du navigateur
+Dans `supabase-config.js`, renseignez uniquement :
+- `url` = Project URL Supabase
+- `anonKey` = Publishable key (ou ancienne clé anon)
 
-## 1. Créer le projet
-1. Créez un projet sur Supabase.
-2. Dans SQL Editor, exécutez `supabase_schema.sql`.
-3. Dans Authentication > Users, créez votre compte administrateur.
-4. Copiez son UUID et exécutez la dernière commande commentée du SQL en remplaçant `VOTRE-UUID`.
+Ne mettez jamais une `sb_secret_...` dans le navigateur.
 
-## 2. Connecter l'application
-Dans `supabase-config.js`, renseignez :
-- `url` = Project URL
-- `anonKey` = Publishable/anon key
+## 2. Base de données
+Dans Supabase → SQL Editor, exécutez `supabase_schema.sql`.
+Le script V6 est idempotent : les policies existantes sont supprimées/recréées et Realtime est activé pour `settings` et `opportunities`.
 
-Ne mettez JAMAIS une `service_role` key dans le navigateur.
+## 3. Compte admin
+Créez votre utilisateur dans Authentication → Users, puis exécutez :
 
-## 3. Publier
-Envoyez les fichiers du ZIP sur votre dépôt GitHub Pages.
+```sql
+insert into public.profiles(id, role)
+values ('VOTRE-UUID', 'admin')
+on conflict (id) do update set role='admin';
+```
 
-## 4. Fonctionnement
-- Client : lit les opportunités et les réglages publics depuis Supabase.
-- Admin : se connecte avec email + mot de passe.
-- Seul un profil `admin` peut créer, modifier ou supprimer les données grâce aux RLS.
-- Sans configuration Supabase, l'application revient au mode `veille.json` + stockage local.
+## 4. Synchronisation
+- Le client (`index.html`) lit `settings` et `opportunities` depuis Supabase.
+- Le dashboard (`admin.html`) écrit dans Supabase après authentification et vérification du rôle admin.
+- Supabase Realtime informe automatiquement les pages ouvertes lorsqu'une donnée change.
+- L'application actualise aussi les données lorsqu'elle revient au premier plan ou retrouve Internet.
+- Le service worker V6 utilise une stratégie network-first pour les pages HTML afin d'éviter de conserver une ancienne version du site.
 
-## 5. Prochaine étape commerciale
-Pour les abonnements Premium, ajoutez ensuite Stripe + une table `subscriptions` côté serveur/Edge Function. Ne mettez jamais la clé secrète Stripe dans le navigateur.
+## 5. GitHub Pages
+Après modification de `supabase-config.js`, envoyez les fichiers V6 dans le dépôt GitHub et attendez le déploiement Pages.
+
+## 6. Test recommandé
+1. Ouvrez Ma Veille sur l'ordinateur.
+2. Ouvrez aussi Ma Veille sur le téléphone.
+3. Connectez-vous à `admin.html` sur l'ordinateur.
+4. Ajoutez/modifiez une opportunité.
+5. Le téléphone doit recevoir la modification automatiquement si la page est ouverte et Realtime est actif.
+6. Si le téléphone était hors ligne, rouvrez l'application ou utilisez `Actualiser` lorsqu'il retrouve Internet.
