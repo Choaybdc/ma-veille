@@ -1,29 +1,31 @@
 {
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-16T17:00:00+02:00",
   "items": [
     {
-      "cat": "cdi",
-      "new": true,
-      "open": true,
+      "id": "demo-cdi-001",
+      "category": "cdi",
       "title": "Exemple — Enseignant d’anglais (CDI)",
-      "org": "Donnée de démonstration — à remplacer par une offre réelle",
-      "place": "France",
-      "date": "2026-09-16",
-      "deadline": "À vérifier",
-      "req": "CDI · profil compatible à vérifier",
-      "url": "https://www.google.com/search?q=offre+CDI+enseignant+anglais+France"
+      "organization": "Exemple",
+      "location": "France",
+      "publishedAt": "2026-09-16",
+      "deadline": "",
+      "conditions": "Exemple — à remplacer par une offre réelle.",
+      "url": "https://www.google.com/search?q=offre+CDI+enseignant+anglais+France",
+      "isNew": true,
+      "isOpen": true
     },
     {
-      "cat": "info",
-      "new": true,
-      "open": true,
+      "id": "demo-l3-001",
+      "category": "l3",
       "title": "Exemple — L3 Informatique",
-      "org": "Donnée de démonstration — à remplacer par une formation réelle",
-      "place": "France / Distance",
-      "date": "2026-09-15",
-      "deadline": "À vérifier",
-      "req": "Admission en L3 à vérifier",
-      "url": "https://www.google.com/search?q=L3+informatique+admission+France"
+      "organization": "Exemple",
+      "location": "France / à distance",
+      "publishedAt": "2026-09-15",
+      "deadline": "",
+      "conditions": "Exemple — à remplacer par une formation réelle.",
+      "url": "https://www.google.com/search?q=L3+informatique+admission+France",
+      "isNew": true,
+      "isOpen": true
     }
   ]
 }
