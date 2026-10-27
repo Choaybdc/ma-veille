@@ -38,5 +38,6 @@ jobs:
             echo "Aucune nouvelle opportunité."
           else
             git commit -m "Mise à jour automatique de la veille"
+            git pull --rebase origin main
             git push
           fi
