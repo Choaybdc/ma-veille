@@ -149,7 +149,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-27T16:47:46+00:00",
+      "verifiedAt": "2026-10-27T16:50:10+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -168,7 +168,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-27T16:47:48+00:00",
+      "verifiedAt": "2026-10-27T16:50:12+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -187,7 +187,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-27T16:47:50+00:00",
+      "verifiedAt": "2026-10-27T16:50:15+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     }
@@ -195,7 +195,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 7,
+    "resultsFoundThisRun": 4,
     "l3PagesChecked": 3,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 3,
