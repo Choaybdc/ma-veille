@@ -81,8 +81,8 @@ def relevant(category, title, description, query):
     ))
     return has_l3 and admissions
 
-def verify_l3_page(url):
-    """Check page reachability and explicit admissions-status indicators."""
+def verify_l3_page(url, publisher_page=False):
+    """Check a result URL or publisher URL without treating a publisher homepage as proof of open admissions."""
     checked_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
     request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 Ma-Veille/2.1"})
     try:
@@ -92,6 +92,10 @@ def verify_l3_page(url):
             raw = response.read(700_000)
             charset = response.headers.get_content_charset() or "utf-8"
         page_text = clean(raw.decode(charset, errors="replace")).lower()
+        if publisher_page:
+            return {"isOpen": False, "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
+                    "verifiedAt": checked_at, "verifiedUrl": final_url,
+                    "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."}
         closed_markers = (
             "candidatures sont closes", "candidature est close", "candidatures closes",
             "inscriptions sont closes", "inscriptions closes", "campagne est terminée",
@@ -152,6 +156,7 @@ def normalize_item(item):
         "isNew": bool(item.get("isNew", item.get("new", False))),
         "isOpen": bool(item.get("isOpen", item.get("open", True))),
         "source": item.get("source") or "Google Actualités",
+        "publisherUrl": item.get("publisherUrl") or "",
         "verificationStatus": item.get("verificationStatus") or ("a_verifier" if category in ("l3", "info") else "non_verifie"),
         "verifiedAt": item.get("verifiedAt") or "",
         "verifiedUrl": item.get("verifiedUrl") or "",
@@ -201,6 +206,9 @@ def main():
 
             source_node = node.find("source")
             source = clean(source_node.text if source_node is not None else "")
+            publisher_url = clean(source_node.get("url", "")) if source_node is not None else ""
+            if publisher_url and not publisher_url.startswith(("https://", "http://")):
+                publisher_url = ""
             old = previous.get(link)
             found[link] = {
                 "id": link,
@@ -215,6 +223,7 @@ def main():
                 "isNew": old is None,
                 "isOpen": True,
                 "source": "Google Actualités",
+                "publisherUrl": publisher_url,
                 "verificationStatus": "a_verifier" if category == "l3" else "non_verifie",
                 "verifiedAt": "",
                 "verifiedUrl": "",
@@ -226,10 +235,17 @@ def main():
     checked = set()
     for item in l3_to_check:
         url = item.get("url", "")
+        publisher_url = item.get("publisherUrl", "")
         if not url or url in checked:
             continue
         checked.add(url)
-        item.update(verify_l3_page(url))
+        # Google News links are discovery redirects, not the programme page.
+        # When the feed exposes the publisher URL, only verify its accessibility;
+        # never infer admissions status from a general publisher homepage.
+        if publisher_url and "news.google.com" in urllib.parse.urlparse(url).netloc:
+            item.update(verify_l3_page(publisher_url, publisher_page=True))
+        else:
+            item.update(verify_l3_page(url))
         status = item.get("verificationStatus")
         if status == "candidatures_probablement_closes":
             item["conditions"] = "Candidatures probablement closes selon la page source ; vérifier l'année universitaire et les sessions complémentaires."
@@ -256,7 +272,7 @@ def main():
             "l3PagesChecked": len(checked),
             "l3StatusCounts": {
                 status: sum(1 for item in items if item.get("category") == "l3" and item.get("verificationStatus") == status)
-                for status in ("page_accessible_candidature_a_confirmer", "page_accessible_a_verifier", "candidatures_probablement_closes", "page_indisponible", "verification_impossible", "a_verifier")
+                for status in ("source_officielle_accessible_statut_a_confirmer", "page_accessible_candidature_a_confirmer", "page_accessible_a_verifier", "candidatures_probablement_closes", "page_indisponible", "verification_impossible", "a_verifier")
             },
         },
     }
