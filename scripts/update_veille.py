@@ -64,10 +64,12 @@ def relevant(category, title, description, query):
             "indéterminée", "indeterminee"
         ))
         # The query is targeted, but still require role + language + CDI evidence.
-        return language and role and contract
+        # Search query is CDI-targeted; use it only as a fallback when the result
+        # clearly concerns an English-teaching role, never to infer the role itself.
+        return language and role and (contract or "cdi" in query.lower())
     has_l3 = any(word in text for word in (
         "l3 informatique", "licence 3 informatique", "licence informatique",
-        "licence informatique", "informatique à distance", "informatique a distance"
+        "informatique à distance", "informatique a distance"
     ))
     admissions = any(word in text for word in (
         "admission", "candidature", "e-candidat", "ecandidat", "inscription",
@@ -111,7 +113,12 @@ def main():
     for raw in previous_data.get("items", []):
         item = normalize_item(raw)
         if item and (not item["publishedAt"] or item["publishedAt"] >= cutoff):
+            category_query = "cdi" if item["category"] == "cdi" else ""
+            if not relevant(item["category"], item["title"], item["conditions"], category_query):
+                continue
             item["isNew"] = False
+            if item["category"] == "cdi":
+                item["conditions"] = "Annonce repérée par une recherche ciblée CDI ; vérifier la nature exacte du contrat sur la source originale."
             previous[item["url"]] = item
 
     found = {}
