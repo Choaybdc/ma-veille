@@ -26,6 +26,10 @@ FEEDS = [
     ("l3", '"licence informatique" "à distance" L3'),
     ("l3", '"licence 3 informatique" enseignement à distance'),
     ("l3", '"L3 informatique" eCandidat'),
+    ("l3", 'site:foad.cnam.fr "licence informatique"'),
+    ("l3", 'site:cnam.fr "licence informatique" distance'),
+    ("l3", '"licence informatique" "formation ouverte à distance"'),
+    ("l3", '"licence informatique" candidature 2026 2027 université'),
 ]
 
 def clean(value):
@@ -118,7 +122,7 @@ def main():
                 continue
             item["isNew"] = False
             if item["category"] == "cdi":
-                item["conditions"] = "Annonce repérée par une recherche ciblée CDI ; vérifier la nature exacte du contrat sur la source originale."
+                item["conditions"] = "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale."
             previous[item["url"]] = item
 
     found = {}
