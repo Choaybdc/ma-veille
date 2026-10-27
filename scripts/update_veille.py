@@ -51,7 +51,7 @@ def parse_date(value):
         return datetime.now(timezone.utc).date().isoformat()
 
 def relevant(category, title, description, query):
-    text = (title + " " + description + " " + query).lower()
+    text = (title + " " + description).lower()
     if category == "cdi":
         language = any(word in text for word in ("anglais", "english"))
         role = any(word in text for word in (
