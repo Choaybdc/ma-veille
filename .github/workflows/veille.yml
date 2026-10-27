@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/update_veille.py'
+      - 'scripts/send_notifications.py'
       - '.github/workflows/veille.yml'
   schedule:
     # Contrôle fréquent : GitHub Actions peut retarder les tâches planifiées en période de charge.
@@ -29,13 +30,22 @@ jobs:
       - name: Mettre à jour veille.json
         run: python scripts/update_veille.py
 
-      - name: Enregistrer les nouveaux résultats
+      - name: Envoyer les alertes email pour les nouvelles opportunités
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+        run: python scripts/send_notifications.py
+
+      - name: Enregistrer les nouveaux résultats et l’état des notifications
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add veille.json
+          git add veille.json notifications_state.json
           if git diff --cached --quiet; then
-            echo "Aucune nouvelle opportunité."
+            echo "Aucune modification à enregistrer."
           else
             git commit -m "Mise à jour automatique de la veille"
             git pull --rebase origin main
