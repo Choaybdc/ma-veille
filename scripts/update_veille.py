@@ -81,6 +81,56 @@ def relevant(category, title, description, query):
     ))
     return has_l3 and admissions
 
+def verify_l3_page(url):
+    """Check page reachability and explicit admissions-status indicators."""
+    checked_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 Ma-Veille/2.1"})
+    try:
+        with urllib.request.urlopen(request, timeout=18) as response:
+            final_url = response.geturl()
+            status = getattr(response, "status", 200)
+            raw = response.read(700_000)
+            charset = response.headers.get_content_charset() or "utf-8"
+        page_text = clean(raw.decode(charset, errors="replace")).lower()
+        closed_markers = (
+            "candidatures sont closes", "candidature est close", "candidatures closes",
+            "inscriptions sont closes", "inscriptions closes", "campagne est terminée",
+            "campagne est terminee", "admissions are closed", "applications are closed",
+            "application period has ended", "deadline has passed", "formation complète",
+            "formation complete", "candidatures ne sont plus possibles",
+            "les candidatures ne sont plus ouvertes",
+        )
+        open_markers = (
+            "candidatures ouvertes", "candidature ouverte", "déposer une candidature",
+            "deposer une candidature", "candidater", "postuler", "e-candidat", "ecandidat",
+            "inscription ouverte", "applications are open", "apply now", "candidatez",
+        )
+        if status in (404, 410):
+            return {"isOpen": False, "verificationStatus": "page_indisponible",
+                    "verifiedAt": checked_at, "verifiedUrl": final_url,
+                    "verificationNote": f"La page source répond HTTP {status}."}
+        if any(marker in page_text for marker in closed_markers):
+            return {"isOpen": False, "verificationStatus": "candidatures_probablement_closes",
+                    "verifiedAt": checked_at, "verifiedUrl": final_url,
+                    "verificationNote": "Indicateur explicite de clôture trouvé ; vérifier l'année universitaire."}
+        if any(marker in page_text for marker in open_markers):
+            return {"isOpen": True, "verificationStatus": "page_accessible_candidature_a_confirmer",
+                    "verifiedAt": checked_at, "verifiedUrl": final_url,
+                    "verificationNote": "Page accessible avec un indice de candidature ; confirmer l'année et la date limite."}
+        return {"isOpen": True, "verificationStatus": "page_accessible_a_verifier",
+                "verifiedAt": checked_at, "verifiedUrl": final_url,
+                "verificationNote": "Page accessible, mais le statut d'admission n'est pas déterminable automatiquement."}
+    except urllib.error.HTTPError as exc:
+        closed = exc.code in (404, 410)
+        return {"isOpen": not closed,
+                "verificationStatus": "page_indisponible" if closed else "erreur_http_a_verifier",
+                "verifiedAt": checked_at, "verifiedUrl": url,
+                "verificationNote": f"Erreur HTTP {exc.code} lors de la vérification de la source."}
+    except Exception as exc:
+        return {"isOpen": True, "verificationStatus": "verification_impossible",
+                "verifiedAt": checked_at, "verifiedUrl": url,
+                "verificationNote": f"Vérification impossible ({type(exc).__name__}) ; statut non confirmé."}
+
 def normalize_item(item):
     # Migrate older JSON records to the schema consumed by the current dashboard.
     url = clean(item.get("url"))
@@ -102,6 +152,10 @@ def normalize_item(item):
         "isNew": bool(item.get("isNew", item.get("new", False))),
         "isOpen": bool(item.get("isOpen", item.get("open", True))),
         "source": item.get("source") or "Google Actualités",
+        "verificationStatus": item.get("verificationStatus") or ("a_verifier" if category in ("l3", "info") else "non_verifie"),
+        "verifiedAt": item.get("verifiedAt") or "",
+        "verifiedUrl": item.get("verifiedUrl") or "",
+        "verificationNote": item.get("verificationNote") or "Vérifier la source originale.",
     }
 
 def main():
@@ -161,7 +215,28 @@ def main():
                 "isNew": old is None,
                 "isOpen": True,
                 "source": "Google Actualités",
+                "verificationStatus": "a_verifier" if category == "l3" else "non_verifie",
+                "verifiedAt": "",
+                "verifiedUrl": "",
+                "verificationNote": "Vérifier la source originale.",
             }
+
+    # Automatically check L3 source pages every run; uncertain statuses are never presented as confirmed open.
+    l3_to_check = [item for item in list(found.values()) + list(previous.values()) if item.get("category") == "l3"]
+    checked = set()
+    for item in l3_to_check:
+        url = item.get("url", "")
+        if not url or url in checked:
+            continue
+        checked.add(url)
+        item.update(verify_l3_page(url))
+        status = item.get("verificationStatus")
+        if status == "candidatures_probablement_closes":
+            item["conditions"] = "Candidatures probablement closes selon la page source ; vérifier l'année universitaire et les sessions complémentaires."
+        elif status == "page_indisponible":
+            item["conditions"] = "Page source indisponible ; rechercher la formation sur le site officiel de l'établissement."
+        elif status == "page_accessible_candidature_a_confirmer":
+            item["conditions"] = "Page accessible avec un indice de candidature ; confirmer l'année universitaire, l'éligibilité et la date limite."
 
     # Keep old items when a feed is temporarily empty or unavailable.
     # Do not replace the saved collection with an empty array after a failed search.
@@ -178,6 +253,11 @@ def main():
             "feedsConfigured": len(FEEDS),
             "feedsSucceeded": successful_feeds,
             "resultsFoundThisRun": len(found),
+            "l3PagesChecked": len(checked),
+            "l3StatusCounts": {
+                status: sum(1 for item in items if item.get("category") == "l3" and item.get("verificationStatus") == status)
+                for status in ("page_accessible_candidature_a_confirmer", "page_accessible_a_verifier", "candidatures_probablement_closes", "page_indisponible", "verification_impossible", "a_verifier")
+            },
         },
     }
     with open(OUT, "w", encoding="utf-8") as handle:
