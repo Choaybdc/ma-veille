@@ -53,7 +53,7 @@
       "location": "France",
       "publishedAt": "2026-10-23",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités"
     },
@@ -67,7 +67,7 @@
       "location": "France",
       "publishedAt": "2026-10-23",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités"
     },
@@ -81,7 +81,7 @@
       "location": "France",
       "publishedAt": "2026-10-23",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités"
     },
@@ -98,11 +98,53 @@
       "isNew": false,
       "isOpen": true,
       "source": "Google Actualités"
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNS3preV9uWU5KSl9tcUt6WGpYNjZHalhWMHFlOGxfeHBNOUl5TlIwY0xMSjl5bUZzRl83VnpDeUprS3YzbnlYc1paTmUzS0pVTGhBWjVrbEF6M1cwRTVOMTNNVmVKRW9OYzdHUkc3dm82NFJtamduaWx0VlRIdnM2RmkwTmIzd3UzVk9fNUhtSDZ2VmJkTkEzZnptRlYtcXNhX3dHUnFvWml2cXVhck9GWkhVampJbjh4VU1ibHFUZV9JQ1F2LW9hQmFsZ2dVLTBsYWZUc1BxWHp6N2Rr?oc=5",
+      "category": "l3",
+      "title": "Licence Informatique parcours Jeux vidéo en Formation à distance - Conservatoire national des arts et métiers - Cnam",
+      "organization": "Conservatoire national des arts et métiers - Cnam",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNS3preV9uWU5KSl9tcUt6WGpYNjZHalhWMHFlOGxfeHBNOUl5TlIwY0xMSjl5bUZzRl83VnpDeUprS3YzbnlYc1paTmUzS0pVTGhBWjVrbEF6M1cwRTVOMTNNVmVKRW9OYzdHUkc3dm82NFJtamduaWx0VlRIdnM2RmkwTmIzd3UzVk9fNUhtSDZ2VmJkTkEzZnptRlYtcXNhX3dHUnFvWml2cXVhck9GWkhVampJbjh4VU1ibHFUZV9JQ1F2LW9hQmFsZ2dVLTBsYWZUc1BxWHp6N2Rr?oc=5",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "location": "France",
+      "publishedAt": "2026-09-15",
+      "deadline": "",
+      "isNew": true,
+      "isOpen": true,
+      "source": "Google Actualités"
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSEo5bWVPdTZlUVlNeENCb1RKd3lSTHNIU0dmbUpnSUt6SU16d2oyWnRNYmw1NkVMLVZWU1hpV2Q4Z1JHb2pKWDN2Zkwzckl0UURpMnA2aEF1WF9BWkc5M2t6ZGQ4SmRheVZaUm41bUlobUlkamJ4OEctd3h5T0lmRlB6dW4wTUVkd3hWY2NqUkc4Q0laM1hveHZ1M1dvSjVTV2E5OWpFUThyb3ZySE1fYzJkWnptb1kxTHh6QnROQ0RBaVZBc00wNXU1TUpBWFpCMHhn?oc=5",
+      "category": "l3",
+      "title": "Licence Informatique parcours Jeux vidéo En apprentissage - Conservatoire national des arts et métiers - Cnam",
+      "organization": "Conservatoire national des arts et métiers - Cnam",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSEo5bWVPdTZlUVlNeENCb1RKd3lSTHNIU0dmbUpnSUt6SU16d2oyWnRNYmw1NkVMLVZWU1hpV2Q4Z1JHb2pKWDN2Zkwzckl0UURpMnA2aEF1WF9BWkc5M2t6ZGQ4SmRheVZaUm41bUlobUlkamJ4OEctd3h5T0lmRlB6dW4wTUVkd3hWY2NqUkc4Q0laM1hveHZ1M1dvSjVTV2E5OWpFUThyb3ZySE1fYzJkWnptb1kxTHh6QnROQ0RBaVZBc00wNXU1TUpBWFpCMHhn?oc=5",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "location": "France",
+      "publishedAt": "2026-09-14",
+      "deadline": "",
+      "isNew": true,
+      "isOpen": true,
+      "source": "Google Actualités"
+    },
+    {
+      "id": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMUtVa1RsUmJNY0QtQWdMUzVpVzRJamFRTjlhRF9EQlZkdFk3S1pOa2JkeXFWeEFhQWtoYl9lX1I5UkZyRmRCbGN2bTdnTXdSdDE2dW9xRURPTFRqVkpjOEtSWHdaSEplajRIcE1GZ2ZZN0RvdGZ5OWVlSEdWcFFWbW5tS01GQk1iaWoydURIempJMERXQndVQTRENkVxNTQ3UExkWlBUaURwOC1KVmE3R2x3bmtScnlEQmRxeEliekwwLVVJT2NyU2ZXMHp4dFpWREpxY2sxc20?oc=5",
+      "category": "l3",
+      "title": "Licence Informatique parcours Informatique générale En alternance - Conservatoire national des arts et métiers - Cnam",
+      "organization": "Conservatoire national des arts et métiers - Cnam",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMUtVa1RsUmJNY0QtQWdMUzVpVzRJamFRTjlhRF9EQlZkdFk3S1pOa2JkeXFWeEFhQWtoYl9lX1I5UkZyRmRCbGN2bTdnTXdSdDE2dW9xRURPTFRqVkpjOEtSWHdaSEplajRIcE1GZ2ZZN0RvdGZ5OWVlSEdWcFFWbW5tS01GQk1iaWoydURIempJMERXQndVQTRENkVxNTQ3UExkWlBUaURwOC1KVmE3R2x3bmtScnlEQmRxeEliekwwLVVJT2NyU2ZXMHp4dFpWREpxY2sxc20?oc=5",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "location": "France",
+      "publishedAt": "2026-09-14",
+      "deadline": "",
+      "isNew": true,
+      "isOpen": true,
+      "source": "Google Actualités"
     }
   ],
   "searchStatus": {
-    "feedsConfigured": 11,
-    "feedsSucceeded": 11,
-    "resultsFoundThisRun": 7
+    "feedsConfigured": 15,
+    "feedsSucceeded": 15,
+    "resultsFoundThisRun": 10
   }
 }
