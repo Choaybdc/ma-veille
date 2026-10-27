@@ -110,7 +110,7 @@ def main():
         return
 
     host = os.getenv("SMTP_HOST", "").strip()
-    port = int(os.getenv("SMTP_PORT", "465"))
+    port = int(os.getenv("SMTP_PORT", "").strip() or "465")
     username = os.getenv("SMTP_USERNAME", "").strip()
     password = os.getenv("SMTP_PASSWORD", "")
     recipient = os.getenv("ALERT_EMAIL", "").strip()
