@@ -59,6 +59,25 @@
       "verificationNote": "Vérifier la source originale."
     },
     {
+      "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OQ3FJZkJQRjdlSEpDTzJkUXBISnBhS2U5dDB4Z1IwWDFaMDRUemVoeVRjdE5TRlBJSzAtUEpmcG5NSnBMVkgwSW5NRVlsVE9XU1NJRWNaell0R3gwaExCM1lVb0trOGhQcnpJeXUtOWRMSnc?oc=5",
+      "category": "cdi",
+      "title": "Offre d'emploi Professeur / Professeure en Anglais (H/F) - 67 - Sélestat - 214QXRQ - France Travail",
+      "organization": "France Travail",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OQ3FJZkJQRjdlSEpDTzJkUXBISnBhS2U5dDB4Z1IwWDFaMDRUemVoeVRjdE5TRlBJSzAtUEpmcG5NSnBMVkgwSW5NRVlsVE9XU1NJRWNaell0R3gwaExCM1lVb0trOGhQcnpJeXUtOWRMSnc?oc=5",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "location": "France",
+      "publishedAt": "2026-10-25",
+      "deadline": "",
+      "isNew": true,
+      "isOpen": true,
+      "source": "Google Actualités",
+      "publisherUrl": "https://candidat.francetravail.fr",
+      "verificationStatus": "non_verifie",
+      "verifiedAt": "",
+      "verifiedUrl": "",
+      "verificationNote": "Vérifier la source originale."
+    },
+    {
       "id": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdXJRZFlfeVItRUNMZk9ZZjBJZVhOdGlCa0plWmxyT3k3OE0xeXVZQjNva3pEWnhWcm15T2RtUnhpRl9WMER6RXhlNEpzcUI5YjJLUEttczNWY2NZQzlSREw0dWlKLWpnVENsSHN1ejlTVU56YlhJdzNmR1gtV0FIYUI0ZkN1TndvdzR2R18xNGZzVDJIdkRLa1dOeTFtOVBiNVRLTmpfVnNGVEJlQ3ZOVXk3X0E0MmVJLW9lT2ZMUl9XcjVjTGxYZmNGYjBPaFNWdTNWem1nVmc5ZzExTkVyemowcUwtM3ExMXc?oc=5",
       "category": "cdi",
       "title": "Postuler à l'offre Enseignant Anglais (H/F)-Collèges Rambervillers et St Dié des Vosges/88-L0422 - France Travail",
@@ -83,7 +102,7 @@
       "title": "Offre d'emploi Enseignant(e) en Anglais (H/F) - 18 - VIERZON - 214VBTV - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE44U18tOUY3TEU4R283RFpkdEJ4Q083c3NjX0FUN1N3cjJiX2o4ZXR5N2VuNjltaWhKSThSSjc2TjJOeFV0Sm5JVDljanFtLVNpZjJGT1ZGTGJadGFYUl9JQ2tXZGo1eWlzdlIxQUFqV3B4dFU?oc=5",
-      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
       "location": "France",
       "publishedAt": "2026-10-23",
       "deadline": "",
@@ -140,11 +159,11 @@
       "title": "Offre d'emploi Professeur/Professeure en anglais (77) (H/F) - 77 - Seine-et-Marne - 214KHKP - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5uSnBScjdYODZkcUtpNVBPbnBuRHB1bWJoQ1FUUWc3ZzJ6M1BtVjM1eTNJRGltZG0tbG5Fcnk5Uy1IOWF0QU9GSzJiYWZVUUlZOVFlMEVzVVZJTkQta0xQWjh5V2dReVAwYlhRcnZMcjMtS2s?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
       "location": "France",
       "publishedAt": "2026-09-25",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités",
       "publisherUrl": "https://candidat.francetravail.fr",
@@ -187,7 +206,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-28T18:20:55+00:00",
+      "verifiedAt": "2026-10-28T22:44:38+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -206,7 +225,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-28T18:20:57+00:00",
+      "verifiedAt": "2026-10-28T22:44:40+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -225,7 +244,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-28T18:20:58+00:00",
+      "verifiedAt": "2026-10-28T22:44:42+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     }
@@ -233,7 +252,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 9,
+    "resultsFoundThisRun": 10,
     "l3PagesChecked": 3,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 3,
