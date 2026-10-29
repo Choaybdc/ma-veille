@@ -64,7 +64,7 @@
       "title": "Offre d'emploi Professeur / Professeure en Anglais (H/F) - 67 - Sélestat - 214QXRQ - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OQ3FJZkJQRjdlSEpDTzJkUXBISnBhS2U5dDB4Z1IwWDFaMDRUemVoeVRjdE5TRlBJSzAtUEpmcG5NSnBMVkgwSW5NRVlsVE9XU1NJRWNaell0R3gwaExCM1lVb0trOGhQcnpJeXUtOWRMSnc?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
       "location": "France",
       "publishedAt": "2026-10-25",
       "deadline": "",
@@ -206,7 +206,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-29T15:14:53+00:00",
+      "verifiedAt": "2026-10-29T20:21:05+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -225,7 +225,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-29T15:14:55+00:00",
+      "verifiedAt": "2026-10-29T20:21:07+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -244,7 +244,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-29T15:14:56+00:00",
+      "verifiedAt": "2026-10-29T20:21:09+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     }
@@ -252,7 +252,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 10,
+    "resultsFoundThisRun": 9,
     "l3PagesChecked": 3,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 3,
