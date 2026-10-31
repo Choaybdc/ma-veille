@@ -11,7 +11,7 @@
       "location": "France",
       "publishedAt": "2026-10-31",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités",
       "publisherUrl": "https://candidat.francetravail.fr",
@@ -263,7 +263,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-31T18:08:43+00:00",
+      "verifiedAt": "2026-10-31T21:31:12+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -278,13 +278,13 @@
       "publishedAt": "2026-09-14",
       "deadline": "",
       "isNew": false,
-      "isOpen": true,
+      "isOpen": false,
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
-      "verificationStatus": "verification_impossible",
-      "verifiedAt": "2026-10-31T18:08:47+00:00",
+      "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
+      "verifiedAt": "2026-10-31T21:31:13+00:00",
       "verifiedUrl": "https://www.cnam.fr",
-      "verificationNote": "Vérification impossible (TimeoutError) ; statut non confirmé."
+      "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
     {
       "id": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMUtVa1RsUmJNY0QtQWdMUzVpVzRJamFRTjlhRF9EQlZkdFk3S1pOa2JkeXFWeEFhQWtoYl9lX1I5UkZyRmRCbGN2bTdnTXdSdDE2dW9xRURPTFRqVkpjOEtSWHdaSEplajRIcE1GZ2ZZN0RvdGZ5OWVlSEdWcFFWbW5tS01GQk1iaWoydURIempJMERXQndVQTRENkVxNTQ3UExkWlBUaURwOC1KVmE3R2x3bmtScnlEQmRxeEliekwwLVVJT2NyU2ZXMHp4dFpWREpxY2sxc20?oc=5",
@@ -301,7 +301,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-10-31T18:09:06+00:00",
+      "verifiedAt": "2026-10-31T21:31:15+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     }
@@ -312,12 +312,12 @@
     "resultsFoundThisRun": 11,
     "l3PagesChecked": 3,
     "l3StatusCounts": {
-      "source_officielle_accessible_statut_a_confirmer": 2,
+      "source_officielle_accessible_statut_a_confirmer": 3,
       "page_accessible_candidature_a_confirmer": 0,
       "page_accessible_a_verifier": 0,
       "candidatures_probablement_closes": 0,
       "page_indisponible": 0,
-      "verification_impossible": 1,
+      "verification_impossible": 0,
       "a_verifier": 0
     }
   }
