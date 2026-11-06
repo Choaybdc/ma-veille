@@ -26,7 +26,7 @@
       "title": "Offre d'emploi Enseignant Anglais (H/F)-CZR Zone Epinal-Remiremont/88-L0422 - 88 - Épinal - 215WKPY - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5rNVFMVnN6QW9DNTgyanVrTmJiNGJRX2xhTG1ORzI1SkhpT0E4Z3A3U3pLVkRCeGx6eTEwQ2xMSVdLcURGdHVIamtBdG5wdGtNMnhMRTF1eVlLYndPNUxHXzB0SUhvaFZBTVdGMG9rcVQ5Vzg?oc=5",
-      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
       "location": "France",
       "publishedAt": "2026-10-31",
       "deadline": "",
@@ -282,7 +282,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-11-06T03:28:22+00:00",
+      "verifiedAt": "2026-11-06T11:23:55+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -301,7 +301,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-11-06T03:28:23+00:00",
+      "verifiedAt": "2026-11-06T11:23:57+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     },
@@ -320,7 +320,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-11-06T03:28:25+00:00",
+      "verifiedAt": "2026-11-06T11:23:59+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     }
@@ -328,7 +328,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 6,
+    "resultsFoundThisRun": 7,
     "l3PagesChecked": 3,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 3,
