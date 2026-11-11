@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173b68"><meta name="description" content="Votre assistant personnel pour organiser les rendez-vous.">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./styles.css">
+<title>Mes rendez-vous</title></head><body>
+<header><div class="brand"><img src="./icon.svg" alt=""><div><b>Mes rendez-vous</b><small>Votre agenda, au même endroit</small></div></div><button id="connect">Connecter Google</button></header>
+<main>
+<section class="welcome"><div><p class="eyebrow">ESPACE PERSONNEL</p><h1>Bonjour 👋</h1><p class="muted">Retrouvez vos rendez-vous et préparez vos déplacements.</p></div><span id="today" class="pill"></span></section>
+<section class="stats"><article><span>À venir</span><b id="count">—</b><small>dans les 30 prochains jours</small></article><article><span>E-mails étoilés</span><b id="mailcount">—</b><small>à examiner</small></article><article><span>Compte Google</span><b id="account">Déconnecté</b><small id="email">Connexion requise</small></article></section>
+<nav><button class="tab active" data-tab="agenda">Mon agenda</button><button class="tab" data-tab="mail">E-mails à examiner</button><button class="tab" data-tab="add">Ajouter</button><button class="tab" data-tab="settings">Paramètres</button></nav>
+<section id="agenda" class="panel active"><div class="heading"><div><p class="eyebrow">VOTRE PLANNING</p><h2>Prochains rendez-vous</h2></div><button class="secondary" id="refresh">Actualiser</button></div><div id="events" class="list"><div class="empty">Connectez votre compte Google pour afficher votre agenda.</div></div></section>
+<section id="mail" class="panel"><div class="heading"><div><p class="eyebrow">GMAIL</p><h2>Messages étoilés</h2></div><button class="secondary" id="scan">Analyser Gmail</button></div><p class="hint">Les e-mails sont des pistes : vérifiez toujours la date, l'heure et le lieu. Aucun rendez-vous n'est créé sans votre confirmation.</p><div id="messages" class="list"><div class="empty">Connectez Google puis lancez l'analyse.</div></div></section>
+<section id="add" class="panel"><div class="heading"><div><p class="eyebrow">CRÉATION</p><h2>Ajouter un rendez-vous</h2></div></div><form id="eventForm">
+<label>Titre<input name="title" required placeholder="Ex. Visite d'évaluation – Collège"></label>
+<div class="two"><label>Date<input name="date" type="date" required></label><label>Début<input name="start" type="time" required></label></div>
+<div class="two"><label>Fin<input name="end" type="time" required></label><label>Lieu<input name="location" placeholder="Établissement, ville"></label></div>
+<label>Adresse complète<textarea name="address" rows="2" placeholder="Adresse postale"></textarea></label>
+<label>Notes<textarea name="notes" rows="3" placeholder="Personne, collègue, informations utiles…"></textarea></label>
+<label class="check"><input name="reminders" type="checkbox" checked> Rappels 3 jours, 2 jours et 1 jour avant</label>
+<button class="primary" type="submit">Créer dans Google Agenda</button><p id="formStatus" class="status"></p></form></section>
+<section id="settings" class="panel"><div class="heading"><div><p class="eyebrow">CONFIGURATION</p><h2>Connexion et confidentialité</h2></div></div><div class="settings">
+<label>Identifiant OAuth Google (client ID)<input id="clientId" placeholder="xxxx.apps.googleusercontent.com" autocomplete="off"></label><button class="primary" id="save">Enregistrer l'identifiant</button>
+<p class="hint">Ajoutez uniquement le Client ID public de type Application Web. Ne collez jamais de mot de passe ni de secret client.</p><hr>
+<button class="secondary" id="notify">Autoriser les notifications</button><button class="secondary" id="install" hidden>Installer l'application</button><button class="danger" id="logout">Déconnecter Google</button>
+<p class="hint">Les appels Gmail et Agenda sont effectués depuis votre navigateur vers Google. Les rappels de rendez-vous sont gérés par Google Agenda.</p><p id="settingsStatus" class="status"></p></div></section>
+</main><footer>Mes rendez-vous · Application personnelle</footer><div id="toast"></div>
+<script src="https://accounts.google.com/gsi/client" async defer></script><script src="./app.js"></script></body></html>
