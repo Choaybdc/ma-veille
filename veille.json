@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "items": [
     {
       "id": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yam5nR2JFdlBVa0RPZ253YkZLdld4djJPc3FXWTNvTkQwZ2htZVNvMUFkNnIxUmZ4WEp2bWxtT1ZHV3dPdDVaNFh2MmdSeEFHc281amU3aDlnTVBCenhFOVFKUG9hNWliMk85NzZ5ekN6RTVLOURUUGVGMlA4NFU?oc=5",
@@ -178,7 +178,7 @@
       "title": "Offre d'emploi Enseignant anglais (H/F) - 45 - Gien - 215SFQN - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBWR2NVSEQxMFhaSDhVRGZLRGZDOGd3Q05UNl8xSHRUM05OMV9MbVViWEpVMlF5Y1VPbWhucGpCV2ttYUJacjNiZjB6QVVtY2hTbzV1NERTM3lSaDU0TWtPYnVYRU14Ulhrc09KaGFfOXNkY0U?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
       "location": "France",
       "publishedAt": "2026-10-27",
       "deadline": "",
@@ -358,45 +358,7 @@
       "source": "Google Actualités",
       "publisherUrl": "https://www.cnam.fr",
       "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-11-13T21:29:05+00:00",
-      "verifiedUrl": "https://www.cnam.fr",
-      "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
-    },
-    {
-      "id": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSEo5bWVPdTZlUVlNeENCb1RKd3lSTHNIU0dmbUpnSUt6SU16d2oyWnRNYmw1NkVMLVZWU1hpV2Q4Z1JHb2pKWDN2Zkwzckl0UURpMnA2aEF1WF9BWkc5M2t6ZGQ4SmRheVZaUm41bUlobUlkamJ4OEctd3h5T0lmRlB6dW4wTUVkd3hWY2NqUkc4Q0laM1hveHZ1M1dvSjVTV2E5OWpFUThyb3ZySE1fYzJkWnptb1kxTHh6QnROQ0RBaVZBc00wNXU1TUpBWFpCMHhn?oc=5",
-      "category": "l3",
-      "title": "Licence Informatique parcours Jeux vidéo En apprentissage - Conservatoire national des arts et métiers - Cnam",
-      "organization": "Conservatoire national des arts et métiers - Cnam",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSEo5bWVPdTZlUVlNeENCb1RKd3lSTHNIU0dmbUpnSUt6SU16d2oyWnRNYmw1NkVMLVZWU1hpV2Q4Z1JHb2pKWDN2Zkwzckl0UURpMnA2aEF1WF9BWkc5M2t6ZGQ4SmRheVZaUm41bUlobUlkamJ4OEctd3h5T0lmRlB6dW4wTUVkd3hWY2NqUkc4Q0laM1hveHZ1M1dvSjVTV2E5OWpFUThyb3ZySE1fYzJkWnptb1kxTHh6QnROQ0RBaVZBc00wNXU1TUpBWFpCMHhn?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
-      "location": "France",
-      "publishedAt": "2026-09-14",
-      "deadline": "",
-      "isNew": false,
-      "isOpen": false,
-      "source": "Google Actualités",
-      "publisherUrl": "https://www.cnam.fr",
-      "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-11-13T21:29:07+00:00",
-      "verifiedUrl": "https://www.cnam.fr",
-      "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
-    },
-    {
-      "id": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMUtVa1RsUmJNY0QtQWdMUzVpVzRJamFRTjlhRF9EQlZkdFk3S1pOa2JkeXFWeEFhQWtoYl9lX1I5UkZyRmRCbGN2bTdnTXdSdDE2dW9xRURPTFRqVkpjOEtSWHdaSEplajRIcE1GZ2ZZN0RvdGZ5OWVlSEdWcFFWbW5tS01GQk1iaWoydURIempJMERXQndVQTRENkVxNTQ3UExkWlBUaURwOC1KVmE3R2x3bmtScnlEQmRxeEliekwwLVVJT2NyU2ZXMHp4dFpWREpxY2sxc20?oc=5",
-      "category": "l3",
-      "title": "Licence Informatique parcours Informatique générale En alternance - Conservatoire national des arts et métiers - Cnam",
-      "organization": "Conservatoire national des arts et métiers - Cnam",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQMUtVa1RsUmJNY0QtQWdMUzVpVzRJamFRTjlhRF9EQlZkdFk3S1pOa2JkeXFWeEFhQWtoYl9lX1I5UkZyRmRCbGN2bTdnTXdSdDE2dW9xRURPTFRqVkpjOEtSWHdaSEplajRIcE1GZ2ZZN0RvdGZ5OWVlSEdWcFFWbW5tS01GQk1iaWoydURIempJMERXQndVQTRENkVxNTQ3UExkWlBUaURwOC1KVmE3R2x3bmtScnlEQmRxeEliekwwLVVJT2NyU2ZXMHp4dFpWREpxY2sxc20?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
-      "location": "France",
-      "publishedAt": "2026-09-14",
-      "deadline": "",
-      "isNew": false,
-      "isOpen": false,
-      "source": "Google Actualités",
-      "publisherUrl": "https://www.cnam.fr",
-      "verificationStatus": "source_officielle_accessible_statut_a_confirmer",
-      "verifiedAt": "2026-11-13T21:29:09+00:00",
+      "verifiedAt": "2026-11-14T01:39:58+00:00",
       "verifiedUrl": "https://www.cnam.fr",
       "verificationNote": "Site de l'organisme accessible ; la page précise de la formation et le calendrier de candidature restent à confirmer."
     }
@@ -404,10 +366,10 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 8,
-    "l3PagesChecked": 3,
+    "resultsFoundThisRun": 5,
+    "l3PagesChecked": 1,
     "l3StatusCounts": {
-      "source_officielle_accessible_statut_a_confirmer": 3,
+      "source_officielle_accessible_statut_a_confirmer": 1,
       "page_accessible_candidature_a_confirmer": 0,
       "page_accessible_a_verifier": 0,
       "candidatures_probablement_closes": 0,
