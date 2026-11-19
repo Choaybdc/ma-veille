@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-19",
   "items": [
     {
       "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTE01c0VBbTUzd0UxQUpjZ2RlTm1QS0FxS3haMnpFVkJWLW9zQ3piN0lsUEptODdOVUlxQ1I5VFJiYXNLM0NkSFJxMXFCMU9kd2V0dTV5SkVBOFZhbG9YWjBJVXlJMmIyaFJLcE1vXzRENENBalU?oc=5",
@@ -140,7 +140,7 @@
       "title": "Offre d'emploi Enseignant Anglais (H/F)-Collège Vautrin Lud/St Dié/88-L0422 - 88 - Vosges - 215ZGTT - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE50ZHJmZlpDVnFrUXAtRjhEWjdoTkFlRUJuOFpZR1ljQl9BOVBzY01XLUdqWDBodkhySFBMRDFXeGgxQlpTR1c3ZDBmZUd5U1E2VDlBckZSTmNRUHVhWUlTdUdwc0VzazhRNnVvUUV0cUNRRmc?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
       "location": "France",
       "publishedAt": "2026-11-03",
       "deadline": "",
@@ -442,7 +442,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 2,
+    "resultsFoundThisRun": 1,
     "l3PagesChecked": 0,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 0,
