@@ -201,7 +201,7 @@
       "location": "France",
       "publishedAt": "2026-11-02",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités",
       "publisherUrl": "https://candidat.francetravail.fr",
