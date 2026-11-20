@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "items": [
+    {
+      "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0yOGh3d2dUckYyRG13bW93YWl4U282NWxTOEhQcVFBd2FnV3FORF92MmlwYTIybmtEbUVySTNCU0lseUZVdWdFdjBGemswV0h6eHBvV1dJRDVfSWNiQ3llRF9pOEVyQWNKYVVVUWdiOFlTM0U?oc=5",
+      "category": "cdi",
+      "title": "Postuler à l'offre Enseignant Anglais (H/F)-Lycée Jacques Callot/Vandoeuvre Les Nancy/54-L0422 - France Travail",
+      "organization": "France Travail",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0yOGh3d2dUckYyRG13bW93YWl4U282NWxTOEhQcVFBd2FnV3FORF92MmlwYTIybmtEbUVySTNCU0lseUZVdWdFdjBGemswV0h6eHBvV1dJRDVfSWNiQ3llRF9pOEVyQWNKYVVVUWdiOFlTM0U?oc=5",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "location": "France",
+      "publishedAt": "2026-11-19",
+      "deadline": "",
+      "isNew": true,
+      "isOpen": true,
+      "source": "Google Actualités",
+      "publisherUrl": "https://candidat.francetravail.fr",
+      "verificationStatus": "non_verifie",
+      "verifiedAt": "",
+      "verifiedUrl": "",
+      "verificationNote": "Vérifier la source originale."
+    },
     {
       "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5YN1FrY1F4X3dTMFNZd0ZPR0QxRExHZjVwMUlWcU5MX2RYLWRPOU1pelNqQ1paekRNQ1lQT05sVWc3UG5uRVluMzBndGtYUTdlV2dZYmlNY19rVkp3aWRLbnVZYjFQVVZsOWg1cEtWc2EybTQ?oc=5",
       "category": "cdi",
@@ -11,7 +30,7 @@
       "location": "France",
       "publishedAt": "2026-11-19",
       "deadline": "",
-      "isNew": true,
+      "isNew": false,
       "isOpen": true,
       "source": "Google Actualités",
       "publisherUrl": "https://candidat.francetravail.fr",
@@ -461,7 +480,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 2,
+    "resultsFoundThisRun": 3,
     "l3PagesChecked": 0,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 0,
