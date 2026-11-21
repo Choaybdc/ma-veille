@@ -2,6 +2,25 @@
   "updatedAt": "2026-11-21",
   "items": [
     {
+      "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsckZpUzZqNExvQnRZaFFPdEtSU3pJbTNYZ2UxQ29FZTVqWkYwQzZkVXJLTERUck80Y2QyNmswWEJzVVMzRkRHMWtjWnpUeTJPYkh3UWN4QVR2RkNaOER3a0RGY1ZiRjJLZHRQRmRkdVZsaGs?oc=5",
+      "category": "cdi",
+      "title": "Offre d'emploi Enseignant d'anglais (H/F) - 45 - Jouy-le-Potier - 216QQHL - France Travail",
+      "organization": "France Travail",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsckZpUzZqNExvQnRZaFFPdEtSU3pJbTNYZ2UxQ29FZTVqWkYwQzZkVXJLTERUck80Y2QyNmswWEJzVVMzRkRHMWtjWnpUeTJPYkh3UWN4QVR2RkNaOER3a0RGY1ZiRjJLZHRQRmRkdVZsaGs?oc=5",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "location": "France",
+      "publishedAt": "2026-11-20",
+      "deadline": "",
+      "isNew": true,
+      "isOpen": true,
+      "source": "Google Actualités",
+      "publisherUrl": "https://candidat.francetravail.fr",
+      "verificationStatus": "non_verifie",
+      "verifiedAt": "",
+      "verifiedUrl": "",
+      "verificationNote": "Vérifier la source originale."
+    },
+    {
       "id": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0yOGh3d2dUckYyRG13bW93YWl4U282NWxTOEhQcVFBd2FnV3FORF92MmlwYTIybmtEbUVySTNCU0lseUZVdWdFdjBGemswV0h6eHBvV1dJRDVfSWNiQ3llRF9pOEVyQWNKYVVVUWdiOFlTM0U?oc=5",
       "category": "cdi",
       "title": "Postuler à l'offre Enseignant Anglais (H/F)-Lycée Jacques Callot/Vandoeuvre Les Nancy/54-L0422 - France Travail",
@@ -197,7 +216,7 @@
       "title": "Offre d'emploi Enseignant d'Anglais (H/F) - 69 - Lyon 8e Arrondissement - 215VTFH - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4wTHVqaVA4TFZIMEN4ZktHSzctMEphVHdQc3ItZTdfc3padlRBa2E2Ny1obHdXZUNMWHRxUmUzQ2tINVJJdmIwaVY3MEg2RExNTFFTVmQzbjloU09tZ2RsbG92aDRnMnRMb0VSMU9KRVF3OEE?oc=5",
-      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
+      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
       "location": "France",
       "publishedAt": "2026-11-02",
       "deadline": "",
@@ -444,7 +463,7 @@
       "title": "Offre d'emploi Professeur(e) d'anglais 19h (H/F) - 75 - Paris 16e Arrondissement - 215KLSN - France Travail",
       "organization": "France Travail",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5meVlQY2RJaDNJMGFITXRFMHFkMjB0dGExb2IzbUM0ek5EYTNNX29saXdPZ09SNEpoSV9BVWVCS3hfNm5qWWt2RlFDV3JRTjdJOVpBOWc3VElKMm1qazlKTTVJLXFteEZuNDVYTThDZWRMdUU?oc=5",
-      "conditions": "Vérifier le contrat, l'éligibilité et la date limite sur la source originale.",
+      "conditions": "Annonce repérée par une recherche ciblée CDI ; vérifier le contrat exact, l'éligibilité et l'ouverture sur la source originale.",
       "location": "France",
       "publishedAt": "2026-10-22",
       "deadline": "",
@@ -499,7 +518,7 @@
   "searchStatus": {
     "feedsConfigured": 15,
     "feedsSucceeded": 15,
-    "resultsFoundThisRun": 3,
+    "resultsFoundThisRun": 4,
     "l3PagesChecked": 0,
     "l3StatusCounts": {
       "source_officielle_accessible_statut_a_confirmer": 0,
